@@ -9,13 +9,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
   background-color: #f8f8f8;
   font-family: Roboto, sans-serif;
+  line-height: 1.6;
+  }
+html{
+  font-size: 100%; /*19px - 1.333 */
 }
 
 /* Units
 4      = 8.2rem
 2      = 4.25 rem
 1.5    = 3.187rem
-1      = 2.125rem / 34px
+1      = 1.578rem / 34px
 0.5    = 1.062rem
 */
 
@@ -23,25 +27,24 @@ body {
 
 :root {
   --primary-color: rgba(42,117,94,1);
-  --typo-h4: 3.125rem;
-  --typo-h5: 2.312rem;
-  --typo-h6: 1.75rem;
+  --typo-h2: 3.125rem;
+  --typo-h4: 1.75rem;
   --typo-font-weight: 300;
   --typo-rubik: 'Rubik', sans-serif;
-  --margin-1:2.125rem;
-  --margin-2: 4.25rem;
+  --margin-1:1.578rem; /*1.578rem;*/
+  --margin-2: 3.157rem;
   --short-width: 66%;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  margin: 2.125rem 0;
+  margin: 1.578rem 0;
 }
 
 hr {
-  margin-top: calc(2.125rem * 2);
-  margin-bottom: calc(2.125rem * 3);
+  margin-top: calc(1.578rem * 2);
+  margin-bottom: calc(1.578rem * 3);
 }
 
 a {
@@ -59,40 +62,32 @@ a:hover {
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--typo-rubik);
   font-weight: 100;
-  margin-bottom: 2.125rem;
-  }
-.content h1 > {
   color: var(--primary-color);
   }
 
-h1, .h1 {
-  font-size: 7.312rem;
-  line-height: 1.2;
+
+h1, .h1{
+  font-size: 4.125rem;
+  line-height: 1.1;
+  margin-bottom: 2.125rem;  
 }
 
 h2, .h2{
-  font-size: 5.5rem;
-  line-height: 1.1;
+  font-size: 3.125rem;
+  line-height: 1.2;
+  margin-bottom: 2.125rem;  
 }
 
 h3, .h3{
-  font-size: 4.125rem;
-  line-height: 1.1;
-}
-
-h4, .h4{
-  font-size: 3.125rem;
-  line-height: 1.2;
-}
-
-h5, .h5{
   font-size: 2.312rem;
   line-height: 1.2;
+  margin-bottom: 2.125rem;  
 }
 
-h6, .h6 {
+h4, .h4, h5, .h5, h6, .h6 {
   font-size: 1.75rem;
   line-height: 1.1;
+  margin-bottom: 1.062rem;
 }
 
 p {
@@ -111,7 +106,7 @@ p {
 
 figcaption {
   text-align: center;
-  margin: 2.125rem 0;
+  margin: 1.578rem 0;
   color: rgba(0,0,0,0.7);
   font-style: italic;
 }
@@ -119,14 +114,14 @@ figcaption {
 cite {
   font-weight: 700;
   font-size: 1.312rem;
-  line-height:1.619;
-  margin-bottom: 2.125rem;
+  line-height:1.578;
+  margin-bottom: 1.578rem;
   font-style: normal;
   color: var(--primary-color);
 }
 
 blockquote{
-  font-size:var(--typo-h6);
+  font-size:var(--typo-h4);
   font-family: var(--typo-rubik);
   font-weight:var(--typo-font-weight);
   color: rgba(0,0,0,0.66);
@@ -161,7 +156,9 @@ blockquote{
 .content {
   flex-wrap: wrap;
   }
-
+article {
+  margin: 12rem 0;
+}
 .cover {
   background-image: url(img/cover.png);
   background-size: cover;
@@ -192,10 +189,10 @@ blockquote{
 }
 .download h4, .download p a {
   color:#fff;
+  margin-top: 0;
 }
 .download .btn {
   background-color: #fff;
-  font-size: 1.0625rem;
   font-weight: 500;
   padding: .9375rem 2rem;
   text-transform: uppercase;
@@ -210,18 +207,55 @@ blockquote{
 .nav ul {
   font-family: var(--typo-rubik);
   color: var(--primary-color);
-  margin-bottom: calc(2.125rem * 3);
+  margin-bottom: calc(1.578rem * 3);
   font-size: var(--typo-h6);
   font-weight: var(--typo-font-weight);
 }
 .nav ul li {
-  line-height: 1.619;
+  line-height: 1.578;
   list-style: none;
 }
 .nav ul li a {
-  text-decoration: none;
-  font-weight: 100;;
+  font-weight: 100;
 }
 .nav ul li a:hover{
   text-decoration: underline;
 }
+
+.two-col {
+  column-count: 2;
+  column-gap: 3rem;
+}
+
+/*table*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.578rem 0;
+  color: var(--primary-color);
+
+}
+td, th {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+
+}
+.table-divider td, .table-divider th {
+  border: none;
+  padding: 1rem 0;
+}
+.table{
+  display: block;
+  align-content: stretch;
+  vertical-align: top;
+  max-width:-content;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
