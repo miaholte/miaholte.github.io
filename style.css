@@ -208,7 +208,8 @@ article {
   font-family: var(--typo-rubik);
   color: var(--primary-color);
   margin-bottom: calc(1.578rem * 3);
-  font-size: var(--typo-h6);
+  font-size: var(--typo-h4);
+  line-height: 1.3;
   font-weight: var(--typo-font-weight);
 }
 .nav ul li {
