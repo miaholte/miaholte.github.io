@@ -1,0 +1,227 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  background-color: #f8f8f8;
+  font-family: Roboto, sans-serif;
+}
+
+/* Units
+4      = 8.2rem
+2      = 4.25 rem
+1.5    = 3.187rem
+1      = 2.125rem / 34px
+0.5    = 1.062rem
+*/
+
+/*Custom*/
+
+:root {
+  --primary-color: rgba(42,117,94,1);
+  --typo-h4: 3.125rem;
+  --typo-h5: 2.312rem;
+  --typo-h6: 1.75rem;
+  --typo-font-weight: 300;
+  --typo-rubik: 'Rubik', sans-serif;
+  --margin-1:2.125rem;
+  --margin-2: 4.25rem;
+  --short-width: 66%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 2.125rem 0;
+}
+
+hr {
+  margin-top: calc(2.125rem * 2);
+  margin-bottom: calc(2.125rem * 3);
+}
+
+a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+a:hover {
+  color: rgba(42,117,94,0.8);
+  text-decoration: none;
+}
+
+
+
+/* Typoscale*/
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--typo-rubik);
+  font-weight: 100;
+  margin-bottom: 2.125rem;
+  }
+.content h1 > {
+  color: var(--primary-color);
+  }
+
+h1, .h1 {
+  font-size: 7.312rem;
+  line-height: 1.2;
+}
+
+h2, .h2{
+  font-size: 5.5rem;
+  line-height: 1.1;
+}
+
+h3, .h3{
+  font-size: 4.125rem;
+  line-height: 1.1;
+}
+
+h4, .h4{
+  font-size: 3.125rem;
+  line-height: 1.2;
+}
+
+h5, .h5{
+  font-size: 2.312rem;
+  line-height: 1.2;
+}
+
+h6, .h6 {
+  font-size: 1.75rem;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 1.312rem;
+  line-height:1.619;
+  margin-bottom: 2.125rem;
+  }
+
+.figure {
+  margin: 4.25vw 0 ;
+}
+.figure img{
+  display: block;
+  margin: auto;
+}
+
+figcaption {
+  text-align: center;
+  margin: 2.125rem 0;
+  color: rgba(0,0,0,0.7);
+  font-style: italic;
+}
+
+cite {
+  font-weight: 700;
+  font-size: 1.312rem;
+  line-height:1.619;
+  margin-bottom: 2.125rem;
+  font-style: normal;
+  color: var(--primary-color);
+}
+
+blockquote{
+  font-size:var(--typo-h6);
+  font-family: var(--typo-rubik);
+  font-weight:var(--typo-font-weight);
+  color: rgba(0,0,0,0.66);
+  margin-bottom: var(--margin-2);
+  margin-top: var(--margin-2);
+  width: 50%;
+}
+
+.lead {
+  color: rgba(0,0,0,0.75);
+  font-family: var(--typo-rubik);
+  font-size: 2.312rem;
+  line-height: 1.2;
+  font-weight: 100;
+  width: 50%;
+  margin: 20vh 0;
+}
+
+
+
+/*layout*/
+
+
+.container {
+  width: 50vw;
+  margin: 0 auto;
+  padding: 5vw;
+  padding-top: 8rem;
+  background: #fff;
+}
+
+.content {
+  flex-wrap: wrap;
+  }
+
+.cover {
+  background-image: url(img/cover.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 33vh;
+  padding: 5vw;
+  margin: 0 auto;
+  color: #fff;
+  margin-top: var(--margin-2);
+  justify-content: space-between;
+}
+.cover h1{
+  color: #fff;
+}
+
+.download {
+  background-color: var(--primary-color);
+  width: 40vw;
+  padding: 6vw 10vw;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: var(--margin-2);
+
+}
+.download h4, .download p a {
+  color:#fff;
+}
+.download .btn {
+  background-color: #fff;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding: .9375rem 2rem;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: .078em;
+  position: relative;
+}
+.download a.btn {
+  text-decoration: none;
+}
+
+.nav ul {
+  font-family: var(--typo-rubik);
+  color: var(--primary-color);
+  margin-bottom: calc(2.125rem * 3);
+  font-size: var(--typo-h6);
+  font-weight: var(--typo-font-weight);
+}
+.nav ul li {
+  line-height: 1.619;
+  list-style: none;
+}
+.nav ul li a {
+  text-decoration: none;
+  font-weight: 100;;
+}
+.nav ul li a:hover{
+  text-decoration: underline;
+}
