@@ -251,7 +251,7 @@ td, th {
   display: block;
   align-content: stretch;
   vertical-align: top;
-  max-width:-content;
+  max-width:content;
   overflow-x: auto;
   white-space: nowrap;
   border-collapse: collapse;
