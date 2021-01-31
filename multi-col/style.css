@@ -10,6 +10,7 @@ body {
   background-color: #fff;
   font-family: Roboto, sans-serif;
   line-height: 1.6;
+  
   }
 html{
   font-size: 100%; /*19px - 1.333 */
@@ -144,17 +145,14 @@ blockquote{
 
 /*layout*/
 
-
 .container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   margin: 0 auto;
-  padding: 5vw;
-  padding-top: 8rem;
   background: #fff;
+  
 }
-
 .content {
   flex-wrap: wrap;
   flex: 5;
@@ -172,9 +170,11 @@ blockquote{
   color: #fff;
 }
 
+article {
+  margin: 5vw ;
+}
 .download {
   background-color: var(--primary-color);
-  width: 80vw;
   padding: 10vw;
   margin: 0 auto;
   color: #fff;
@@ -199,8 +199,18 @@ blockquote{
 }
 
 .nav {
-  flex: 1 auto;
+  display: flex;
+  flex: 1 ;
+  padding: 5vw;
+  min-height: 100vh;
+  background-color: #f8f8f8;
 }
+.nav ul li {
+  overflow-wrap: break-word;
+}
+ul.sidebar {
+  position: fixed; /*fix bugs*/
+  }
 
 .nav ul {
   font-family: var(--typo-rubik);
@@ -260,10 +270,14 @@ td, th {
 
 
 /*footnotes*/
+.footnotes {
+  padding: 5vw;
+}
 .footnote {
   border-top: 5px solid rgba(42,117,94,0.2);
   padding-top: var(--margin-2);
 }
+
 
 
 
