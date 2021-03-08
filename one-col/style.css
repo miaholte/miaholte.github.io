@@ -8,8 +8,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 body {
   background-color: #f8f8f8;
-  font-family: Roboto, sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
+  -webkit-font-smoothing: antialiased;
   line-height: 1.6;
+  color:rgba(0,0,0,0.75);
   }
 html{
   font-size: 100%; /*19px - 1.333 */
@@ -30,7 +32,7 @@ html{
   --typo-h2: 3.125rem;
   --typo-h4: 1.75rem;
   --typo-font-weight: 300;
-  --typo-rubik: 'Rubik', sans-serif;
+  --typo-main: 'Lexend Deca', sans-serif;
   --margin-1:2.125rem;
   --margin-2: 4.25rem;
   --short-width: 66%;
@@ -60,7 +62,7 @@ a:hover {
 
 /* Typoscale*/
 h1,h2,h3,h4,h5,h6 {
-  font-family: var(--typo-rubik);
+  font-family: var(--typo-main);
   font-weight: 100;
   color: var(--primary-color);
   }
@@ -91,7 +93,8 @@ h4, .h4, h5, .h5, h6, .h6 {
 }
 
 p {
-  font-size: 1.312rem;
+  /**font-size: 1.312rem;**/
+  font-size: 1.2rem;
   line-height:1.619;
   margin-bottom: 2.125rem;
   }
@@ -122,17 +125,17 @@ cite {
 
 blockquote{
   font-size:var(--typo-h4);
-  font-family: var(--typo-rubik);
+  font-family: var(--typo-main);
   font-weight:var(--typo-font-weight);
   color: rgba(0,0,0,0.66);
   margin-bottom: var(--margin-2);
   margin-top: var(--margin-2);
-  width: 50%;
+  width: 66%;
 }
 
 .lead {
   color: rgba(0,0,0,0.75);
-  font-family: var(--typo-rubik);
+  font-family: var(--typo-main);
   font-size: 2.312rem;
   line-height: 1.2;
   font-weight: 100;
@@ -146,7 +149,7 @@ blockquote{
 
 
 .container {
-  width: 50vw;
+  width: 29vw;
   margin: 0 auto;
   padding: 5vw;
   padding-top: 8rem;
@@ -164,7 +167,7 @@ article {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 29vw;
   height: 33vh;
   padding: 5vw;
   margin: 0 auto;
@@ -178,7 +181,7 @@ article {
 
 .download {
   background-color: var(--primary-color);
-  width: 40vw;
+  width: 19vw;
   padding: 6vw 10vw;
   margin: 0 auto;
   color: #fff;
@@ -205,7 +208,7 @@ article {
 }
 
 .nav ul {
-  font-family: var(--typo-rubik);
+  font-family: var(--typo-main);
   color: var(--primary-color);
   margin-bottom: calc(1.578rem * 3);
   font-size: var(--typo-h4);
