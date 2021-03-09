@@ -203,11 +203,15 @@ blockquote{
 .cover {
   background-image: url(../assets/cover.png);
   background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
   height: 100vh;
   margin: 0 auto;
   padding-left: 5vw;
   color: #fff;
-  justify-content: space-between;
+
 }
 .cover h1{
   color: #fff;
