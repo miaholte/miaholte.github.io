@@ -15,6 +15,7 @@ body {
   }
 html{
   font-size: 100%; /*19px - 1.333 */
+  scroll-behavior: smooth;
 }
 
 /* Units
@@ -149,15 +150,16 @@ blockquote{
 
 
 .container {
-  width: 29vw;
+  width: 80vw;
   margin: 0 auto;
-  padding: 5vw;
-  padding-top: 8rem;
   background: #fff;
+  max-width:1280px;
 }
 
 .content {
   flex-wrap: wrap;
+  padding: 5vw;
+  padding-top: 8rem;
   }
 article {
   margin: 12rem 0;
@@ -167,9 +169,8 @@ article {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  width: 29vw;
   height: 33vh;
-  padding: 5vw;
+  padding: 5vw ;
   margin: 0 auto;
   color: #fff;
   margin-top: var(--margin-2);
@@ -181,7 +182,6 @@ article {
 
 .download {
   background-color: var(--primary-color);
-  width: 19vw;
   padding: 6vw 10vw;
   margin: 0 auto;
   color: #fff;
