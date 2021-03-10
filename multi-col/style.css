@@ -225,6 +225,10 @@ blockquote{
 }
 article {
   margin-top: 15rem;
+  position: relative;
+}
+article h1, article h2{
+  scroll-margin-top: var(--margin-2);
 }
 
 
