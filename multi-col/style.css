@@ -30,8 +30,8 @@ html{
 
 :root {
   --primary-color: rgba(42,117,94,1);
-  --typo-h2: 3.125rem;
-  --typo-h4: 1.75rem;
+  --typo-h2: 3.158rem;
+  --typo-h4: 1.316rem;
   --typo-font-weight: 300;
   --typo-main: 'Lexend Deca', sans-serif;
   --margin-1:2.125rem;
@@ -70,31 +70,31 @@ h1,h2,h3,h4,h5,h6 {
 
 
 h1, .h1{
-  font-size: 4.125rem;
+  font-size: 4.211rem; /*80px*/
   line-height: 1.1;
   margin-bottom: 2.125rem;  
 }
 
 h2, .h2{
-  font-size: 3.125rem;
+  font-size: 3.158rem; /*60px*/
   line-height: 1.2;
   margin-bottom: 2.125rem;  
 }
 
 h3, .h3{
-  font-size: 2.312rem;
+  font-size: 2.368rem; /*45px*/
   line-height: 1.2;
   margin-bottom: 2.125rem;  
 }
 
 h4, .h4, h5, .h5, h6, .h6 {
-  font-size: 1.75rem;
+  font-size: 1.316rem; /*25px*/
   line-height: 1.1;
   margin-bottom: 1.062rem;
 }
 
 p {
-  font-size: 1.312rem;
+  font-size: 1.118rem; /*19px*/
   line-height:1.619;
   margin-bottom: 2.125rem;
   }
@@ -157,9 +157,8 @@ blockquote{
   flex-wrap: wrap;
   }
 .content{
-  width: 75%;
+  width: 78%;
   margin-left: auto!important;
-  padding-left: 30px;
 }
 
 
@@ -170,25 +169,19 @@ blockquote{
   left: 0;
   z-index: 100;
   flex: 0 0 auto;
-  width: 25%;
+  width:22%;
   background-color: #f8f8f8;
-}
-.nav ul li {
-  overflow-wrap: break-word;
 }
 .nav ul {
   font-family: var(--typo-main);
   color: var(--primary-color);
   margin-bottom: calc(1.578rem * 3);
-  font-size: 1.312rem;
   font-weight: var(--typo-font-weight);
 }
 .nav ul li {
   line-height: 1.9;
   list-style: none;
-}
-.nav ul li a {
-  font-weight: 100;
+  overflow-wrap: break-word;
 }
 .nav ul li a:hover{
   text-decoration: underline;
@@ -216,7 +209,6 @@ blockquote{
 .cover h1{
   color: #fff;
   padding-top: 5vw;
-  font-size: calc(4.125rem * 2);
 }
 
 .two-col {
@@ -224,15 +216,12 @@ blockquote{
   column-gap: 3rem;
 }
 article {
-  margin-top: 15rem;
+  margin-top: 5rem;
   position: relative;
 }
 article h1, article h2{
   scroll-margin-top: var(--margin-2);
 }
-
-
-
 
 
 
@@ -304,10 +293,19 @@ td, th {
 }
 
 @media (max-width: 600px) {
+  .content {
+    width: 100%;
+  }
   nav {
     display: none;
   }
-  .cover h1 {
+  .cover {
+    height: 20vh;
+    display: block;
+    padding: 2vh;
+  }
+  .cover h1{
     font-size: var(--typo-h2) ;
+    justify-content:flex-start;
   }
 }
