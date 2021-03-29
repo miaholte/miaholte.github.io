@@ -315,13 +315,14 @@ td, th {
   nav {
    /* display: none;*/
   }
-  .cover {
-    padding: 2vh;
-  }
+
   .cover h1{
     font-size: var(--typo-h2) ;
     justify-content:flex-start;
   }
+  article p {
+  column-count: 1;
+}
 }
 
 @media (min-width:992px){
