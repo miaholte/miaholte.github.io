@@ -193,6 +193,7 @@ blockquote{
 .btn {
   z-index: 200;
   position: relative;
+  float:right;
 }
 .chapters {
   padding: 5vw;
