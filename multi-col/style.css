@@ -195,7 +195,7 @@ blockquote{
   right: 1rem;
   top: 1rem;
   background-color: #fff;
-  border: none;
+  border: 1px solid #ddd;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 2px;
