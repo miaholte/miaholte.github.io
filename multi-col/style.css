@@ -164,13 +164,13 @@ blockquote{
 
 .nav {
   position: fixed;
-  flex: 0 0 auto;
   top:0;
   bottom: 0;
   left: 0;
   z-index: 100;
-  flex: 0 0 auto;
   width:22%;
+  height: 100%;
+  overflow-x: hidden;
   background-color: #f8f8f8;
 }
 .nav ul {
@@ -190,10 +190,11 @@ blockquote{
 .sidebar {
   padding: 2rem;
 }
-.btn {
+.toggle-btn {
   z-index: 200;
-  position: relative;
-  float:right;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
 }
 .chapters {
   padding: 5vw;
@@ -305,16 +306,16 @@ td, th {
   padding-top: var(--margin-2);
 }
 
+
+
+
+
 @media (max-width: 600px) {
-  .content {
-    width: 100%;
-  }
+
   nav {
    /* display: none;*/
   }
   .cover {
-    height: 20vh;
-    display: block;
     padding: 2vh;
   }
   .cover h1{
@@ -331,7 +332,9 @@ td, th {
 }
 
 @media (max-width:992px) {
-
+  .content {
+    width: 100%;
+  }
   .nav {
   left: -75vw;
   margin-right: -75vw;    
