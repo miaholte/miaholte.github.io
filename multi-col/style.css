@@ -9,7 +9,7 @@ body {
   background-color: #f8f8f8;
   font-family: 'Lexend', sans-serif;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.75;
+  line-height: 1.619;
   color:rgba(0,0,0,0.95);
   font-weight: 400;
   }
@@ -24,11 +24,12 @@ html{
 :root {
   --primary-color: rgba(42,117,94,1);
   --typo-h2: 3.158rem;
+  --typo-h3: 2.368rem;
   --typo-h4: 1.316rem;
   --typo-font-weight: 300;
   --typo-main: 'Lexend', sans-serif;
-  --margin-1:2.125rem;
-  --margin-2: 4.25rem;
+  --margin-1:1.38rem;
+  --margin-2: 3rem;
   --short-width: 66%;
 }
 
@@ -58,32 +59,26 @@ a:hover {
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--typo-main);
   font-weight: 700;
+  margin: 3rem 0 1.38rem;
   color: var(--primary-color);
+  line-height: 1.3;
   }
 
 
 h1, .h1{
   font-size: 4.211rem; /*80px*/
-  line-height: 1.1;
-  margin-bottom: 2.125rem;  
 }
 
 h2, .h2{
   font-size: 3.158rem; /*60px*/
-  line-height: 1.2;
-  margin-bottom: 2.125rem;  
 }
 
 h3, .h3{
   font-size: 2.368rem; /*45px*/
-  line-height: 1.2;
-  margin-bottom: 2.125rem;  
 }
 
 h4, .h4, h5, .h5, h6, .h6 {
   font-size: 1.316rem; /*25px*/
-  line-height: 1.1;
-  margin-bottom: 1.062rem;
 }
 
 p {
@@ -110,26 +105,27 @@ figcaption {
 cite {
   font-weight: 700;
   font-size: 1.312rem;
-  line-height:1.578;
+  line-height:1.3;
   margin-bottom: 1.578rem;
   color: var(--primary-color);
 }
 
 blockquote{
-  font-size:var(--typo-h4);
+  font-size:var(--typo-h3);
   font-family: var(--typo-main);
   font-weight:var(--typo-font-weight);
   color: rgba(0,0,0,0.66);
   margin-bottom: var(--margin-2);
   margin-top: var(--margin-2);
-  width: 50%;
+  line-height: 1.3;
+  width: 66%;
 }
 
 .lead {
   color: rgba(0,0,0,0.75);
   font-family: var(--typo-main);
   font-size: 2.312rem;
-  line-height: 1.2;
+  line-height: 1.3;
   font-weight: 100;
   width: 50%;
   margin: 20vh 0;
@@ -239,6 +235,7 @@ table {
   border-collapse: collapse;
   margin: 1.578rem 0;
   color: var(--primary-color);
+  line-height: 1.3;
 }
 thead {
   font-weight: bold;
@@ -334,8 +331,17 @@ td, th {
   }
 
   @media (max-width: 600px) {
+ 
+  h1, .h1 {
+    font-size: var(--typo-h2) ;    
+  }
+  h2, .h2 {
+    font-size: var(--typo-h3);
+  }
+    h3, .h3, h4, .h4{
+    font-size: var(--typo-h4);
+  }
   .cover h1{
-    font-size: var(--typo-h2) ;
     justify-content:flex-start;
   }
   article p {
