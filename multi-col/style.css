@@ -181,13 +181,15 @@ blockquote{
 .toggle-btn {
   z-index: 200;
   position: fixed;
+  letter-spacing: 0.02rem;
   right: 1rem;
   top: 1rem;
   background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 10px 20px;
+  padding: 15px 20px;
+  border: none;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 45px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 .chapters {
   padding: 5vw;
@@ -264,15 +266,13 @@ td, th {
 /*download*/
 .download {
   background-color: var(--primary-color);
-  padding: 10vw;
-  margin: 0 auto;
+  padding: 5vw 10vw;
+  display: flex;
   color: #fff;
-  text-align: center;
-  justify-content: center;
+  align-items: center;
 }
-.download h4, .download p a {
+.download h2, .download p a {
   color:#fff;
-  margin-top: 0;
 }
 .download .btn {
   background-color: #fff;
@@ -281,10 +281,14 @@ td, th {
   text-transform: uppercase;
   display: inline-block;
   letter-spacing: .078em;
-  position: relative;
 }
+
 .download a.btn {
   text-decoration: none;
+}
+.download img {
+  max-width: 80%;
+  padding:1rem;
 }
 
 /*footnotes*/
